@@ -8,7 +8,7 @@ import { servicePhones, siteConfig } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Pioud Energy pour vos projets CEE : formulaire, coordonnées par service, horaires et demande de rappel.",
+    "Contactez PIOUD ENERGY pour vos projets CEE : formulaire, coordonnées par service, horaires et demande de rappel.",
 };
 
 export default function ContactPage() {
@@ -232,7 +232,7 @@ export default function ContactPage() {
           <Reveal delay={0.1}>
             <div className="card-surface overflow-hidden">
               <iframe
-                title="Carte Google Maps - Pioud Energy"
+                title="Carte Google Maps - PIOUD ENERGY"
                 src="https://www.google.com/maps?q=75008+Paris&output=embed"
                 className="h-full min-h-[430px] w-full border-0"
                 loading="lazy"

@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 export const metadata: Metadata = {
   title: "CEE pour les particuliers",
   description:
-    "Découvrez comment financer vos travaux de rénovation énergétique grâce au dispositif CEE avec l'accompagnement Pioud Energy.",
+    "Découvrez comment financer vos travaux de rénovation énergétique grâce au dispositif CEE avec l'accompagnement PIOUD ENERGY.",
 };
 
 const eligibleWorks = [
@@ -41,7 +41,7 @@ export default function ParticuliersPage() {
       <PageHero
         eyebrow="Particuliers"
         title="Rénovez votre logement avec les primes CEE"
-        description="Pioud Energy vous accompagne pour identifier les travaux éligibles, constituer votre dossier et sécuriser le versement de votre prime énergie."
+        description="PIOUD ENERGY vous accompagne pour identifier les travaux éligibles, constituer votre dossier et sécuriser le versement de votre prime énergie."
         imageUrl="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=1600&q=80"
         primaryCta={{ href: "/simulateur", label: "Accéder au simulateur" }}
         secondaryCta={{ href: "/contact", label: "Parler à un conseiller" }}

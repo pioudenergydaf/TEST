@@ -17,7 +17,7 @@ export default function GrandsComptesPage() {
       <PageHero
         eyebrow="Grands comptes"
         title="Un accompagnement CEE sur mesure à l'échelle nationale"
-        description="Pioud Energy déploie des stratégies CEE premium pour les organisations multi-entités : gouvernance, pilotage data et valorisation optimisée."
+        description="PIOUD ENERGY déploie des stratégies CEE premium pour les organisations multi-entités : gouvernance, pilotage data et valorisation optimisée."
         imageUrl="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
         primaryCta={{ href: "/contact", label: "Contacter l'équipe dédiée" }}
         secondaryCta={{ href: "/simulateur", label: "Tester le simulateur" }}

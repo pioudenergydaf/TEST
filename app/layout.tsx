@@ -14,8 +14,8 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Pioud Energy | Certificats d'Économies d'Énergie",
-    template: "%s | Pioud Energy",
+    default: "PIOUD ENERGY | Certificats d'Économies d'Énergie",
+    template: "%s | PIOUD ENERGY",
   },
   description:
     "Cabinet expert en Certificats d'Économies d'Énergie : conseils, montage et valorisation CEE pour particuliers, professionnels et collectivités.",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     "Certificats d'Économies d'Énergie",
     "prime énergie",
     "rénovation énergétique",
-    "Pioud Energy",
+    "PIOUD ENERGY",
   ],
   openGraph: {
-    title: "Pioud Energy - Votre partenaire expert CEE",
+    title: "PIOUD ENERGY - Votre partenaire expert CEE",
     description:
       "Accélérez vos projets d'efficacité énergétique grâce à un accompagnement CEE premium et personnalisé.",
     url: siteConfig.url,
-    siteName: "Pioud Energy",
+    siteName: "PIOUD ENERGY",
     locale: "fr_FR",
     type: "website",
   },

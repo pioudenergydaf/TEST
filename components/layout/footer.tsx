@@ -11,14 +11,14 @@ export function Footer() {
         <div className="space-y-4">
           <Image
             src="/logo-pioud-energy.svg"
-            alt="Pioud Energy"
+            alt="PIOUD ENERGY"
             width={190}
             height={44}
             className="h-10 w-auto brightness-0 invert"
           />
           <p className="text-lg font-semibold text-white">À propos</p>
           <p className="text-sm leading-relaxed text-slate-300">
-            Pioud Energy accompagne ses clients dans le financement de leurs
+            PIOUD ENERGY accompagne ses clients dans le financement de leurs
             projets d&apos;efficacité énergétique via les dispositifs CEE.
           </p>
         </div>
@@ -86,7 +86,7 @@ export function Footer() {
       <div className="border-t border-slate-700/60">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <p>
-            © {new Date().getFullYear()} Pioud Energy. Tous droits réservés.
+            © {new Date().getFullYear()} PIOUD ENERGY. Tous droits réservés.
           </p>
           <p>Mandataire CEE - Solutions d&apos;efficacité énergétique.</p>
         </div>

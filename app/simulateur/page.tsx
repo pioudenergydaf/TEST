@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Simulateur CEE",
   description:
-    "Estimez le montant de votre prime CEE en quelques clics grâce au simulateur Pioud Energy.",
+    "Estimez le montant de votre prime CEE en quelques clics grâce au simulateur PIOUD ENERGY.",
 };
 
 export default function SimulateurPage() {

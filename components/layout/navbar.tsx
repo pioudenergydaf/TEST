@@ -36,7 +36,7 @@ export function Navbar() {
         <Link href="/" className="inline-flex items-center">
           <Image
             src="/logo-pioud-energy.svg"
-            alt="Pioud Energy"
+            alt="PIOUD ENERGY"
             width={206}
             height={48}
             className="h-10 w-auto sm:h-11"

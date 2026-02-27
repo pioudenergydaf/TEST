@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Mentions légales",
-  description: "Mentions légales du site Pioud Energy.",
+  description: "Mentions légales du site PIOUD ENERGY.",
 };
 
 export default function MentionsLegalesPage() {
@@ -13,14 +13,14 @@ export default function MentionsLegalesPage() {
         <h1 className="text-3xl font-bold text-[#0F2B46]">Mentions légales</h1>
         <div className="space-y-3 text-slate-600">
           <p>
-            <strong>Éditeur :</strong> Pioud Energy SAS - 18 Rue de l&apos;Énergie,
+            <strong>Éditeur :</strong> PIOUD ENERGY SAS - 18 Rue de l&apos;Énergie,
             75008 Paris.
           </p>
           <p>
             <strong>Contact :</strong> {siteConfig.email} - {siteConfig.phone}
           </p>
           <p>
-            <strong>Directeur de publication :</strong> Direction générale Pioud Energy.
+            <strong>Directeur de publication :</strong> Direction générale PIOUD ENERGY.
           </p>
           <p>
             <strong>Hébergement :</strong> Infrastructure cloud sécurisée en Union Européenne.

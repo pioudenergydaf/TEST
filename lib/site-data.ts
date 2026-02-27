@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Pioud Energy",
+  name: "PIOUD ENERGY",
   description:
-    "Pioud Energy accompagne particuliers, professionnels, collectivités et grands comptes dans la valorisation des Certificats d'Économies d'Énergie.",
+    "PIOUD ENERGY accompagne particuliers, professionnels, collectivités et grands comptes dans la valorisation des Certificats d'Économies d'Énergie.",
   url: "https://pioud-energy.fr",
   simulatorUrl: "https://simulateur.pioud-energy.fr",
   email: "contact@pioud-energy.fr",
@@ -54,7 +54,7 @@ export const keyFigures = [
 export const testimonials = [
   {
     quote:
-      "Grâce à Pioud Energy, nous avons financé une rénovation complète de l'isolation en moins de 8 semaines. Accompagnement irréprochable.",
+      "Grâce à PIOUD ENERGY, nous avons financé une rénovation complète de l'isolation en moins de 8 semaines. Accompagnement irréprochable.",
     author: "Julie R.",
     role: "Propriétaire - Maison individuelle",
   },
