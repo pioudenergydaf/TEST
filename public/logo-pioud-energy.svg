@@ -1,0 +1,18 @@
+<svg width="308" height="72" viewBox="0 0 308 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pioud-gradient" x1="12" y1="8" x2="58" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2B46"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="pioud-leaf" x1="28" y1="16" x2="50" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9EF3D7"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="64" height="64" rx="18" fill="url(#pioud-gradient)"/>
+  <path d="M23 43.5L35.7 21.4C36.3 20.4 37.7 20.5 38.1 21.6L42.1 32.8H50.6C51.8 32.8 52.5 34.1 51.8 35.1L38.9 53.5C38.2 54.5 36.7 54.3 36.3 53.1L32.5 42.2H24.2C23.1 42.2 22.4 44.2 23 43.5Z" fill="white"/>
+  <path d="M45.2 16.4C44.4 20.2 42.2 22.7 38.8 24C40.3 20.7 42.9 18.2 45.2 16.4Z" fill="url(#pioud-leaf)"/>
+  <text x="82" y="34" fill="#0F2B46" font-family="Inter, Manrope, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.4">PIOUD</text>
+  <text x="165" y="34" fill="#0F2B46" font-family="Inter, Manrope, Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4">ENERGY</text>
+  <text x="83" y="53" fill="#64748B" font-family="Inter, Manrope, Arial, sans-serif" font-size="11.5" font-weight="600" letter-spacing="1.4">CERTIFICATS D'ECONOMIES D'ENERGIE</text>
+</svg>
