@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle2, Flame, Home, Thermometer, Window } from "lucide-react";
+import { CheckCircle2, Flame, Home, Thermometer, Wrench } from "lucide-react";
 import { PageHero } from "@/components/ui/page-hero";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -26,7 +26,7 @@ const eligibleWorks = [
   {
     title: "Fenêtres et menuiseries",
     description: "Améliorez le confort hiver/été avec des équipements à faible transmission.",
-    icon: Window,
+    icon: Wrench,
   },
   {
     title: "Pilotage et régulation",

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Building, LampStreet, School, ShieldCheck } from "lucide-react";
+import { Building2, Lightbulb, School, ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/ui/page-hero";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -47,7 +47,7 @@ export default function CollectivitesPage() {
               title: "Éclairage public",
               description:
                 "Modernisation LED, télégestion et réduction des consommations électriques.",
-              icon: LampStreet,
+              icon: Lightbulb,
             },
             {
               title: "Bâtiments communaux",
@@ -59,7 +59,7 @@ export default function CollectivitesPage() {
               title: "Systèmes de chauffage",
               description:
                 "Optimisation des installations thermiques et remplacement d'équipements vieillissants.",
-              icon: Building,
+              icon: Building2,
             },
           ].map((item, index) => (
             <Reveal key={item.title} delay={index * 0.1}>
@@ -88,7 +88,8 @@ export default function CollectivitesPage() {
               </h2>
               <p className="mt-3 text-slate-600">
                 Nos consultants pilotent les pièces administratives, coordonnent les
-                acteurs du projet et assurent le suivi des obligations jusqu'au versement.
+                acteurs du projet et assurent le suivi des obligations jusqu&apos;au
+                versement.
               </p>
             </div>
             <Link href="/contact" className="btn-primary h-fit justify-center">

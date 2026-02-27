@@ -137,7 +137,9 @@ export default function ContactPage() {
               </div>
 
               <div className="card-surface p-6">
-                <p className="mb-4 text-lg font-semibold text-[#0F2B46]">Horaires d'ouverture</p>
+                <p className="mb-4 text-lg font-semibold text-[#0F2B46]">
+                  Horaires d&apos;ouverture
+                </p>
                 <ul className="space-y-2 text-sm text-slate-600">
                   <li className="flex items-start gap-2">
                     <Clock3 className="mt-0.5 h-4 w-4 text-emerald-600" />

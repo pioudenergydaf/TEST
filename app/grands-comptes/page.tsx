@@ -85,7 +85,7 @@ export default function GrandsComptesPage() {
           <div className="card-surface p-8">
             <h2 className="text-3xl font-bold text-[#0F2B46]">Références clients</h2>
             <p className="mt-3 text-slate-600">
-              Nos équipes accompagnent des groupes nationaux dans l'industrie, la
+              Nos équipes accompagnent des groupes nationaux dans l&apos;industrie, la
               distribution, la logistique et le tertiaire avec des programmes CEE
               pluriannuels.
             </p>

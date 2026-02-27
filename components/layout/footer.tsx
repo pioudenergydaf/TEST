@@ -11,7 +11,7 @@ export function Footer() {
           <p className="text-lg font-semibold text-white">À propos</p>
           <p className="text-sm leading-relaxed text-slate-300">
             Pioud Energy accompagne ses clients dans le financement de leurs
-            projets d'efficacité énergétique via les dispositifs CEE.
+            projets d&apos;efficacité énergétique via les dispositifs CEE.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} Pioud Energy. Tous droits réservés.
           </p>
-          <p>Mandataire CEE - Solutions d'efficacité énergétique.</p>
+          <p>Mandataire CEE - Solutions d&apos;efficacité énergétique.</p>
         </div>
       </div>
     </footer>

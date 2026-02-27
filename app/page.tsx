@@ -168,7 +168,7 @@ export default function Home() {
             <div className="mx-auto max-w-3xl text-center">
               <p className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700">
                 <Leaf className="h-4 w-4" />
-                Réseau d'experts partenaires
+                Réseau d&apos;experts partenaires
               </p>
               <h2 className="mt-4 text-3xl font-bold text-[#0F2B46] sm:text-4xl">
                 Un écosystème solide pour accélérer vos projets
