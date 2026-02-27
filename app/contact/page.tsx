@@ -183,6 +183,17 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
+                  <label htmlFor="callback-email" className="mb-2 block text-sm font-medium text-slate-700">
+                    Email
+                  </label>
+                  <input
+                    id="callback-email"
+                    type="email"
+                    className="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
+                    placeholder="vous@exemple.fr"
+                  />
+                </div>
+                <div>
                   <label htmlFor="callback-phone" className="mb-2 block text-sm font-medium text-slate-700">
                     Téléphone
                   </label>
