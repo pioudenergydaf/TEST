@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -32,14 +33,15 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#0F2B46] to-[#10B981] text-sm font-bold text-white">
-            PE
-          </span>
-          <div>
-            <p className="text-sm font-semibold text-slate-500">Groupe CEE</p>
-            <p className="text-base font-bold text-[#0F2B46]">Pioud Energy</p>
-          </div>
+        <Link href="/" className="inline-flex items-center">
+          <Image
+            src="/logo-pioud-energy.svg"
+            alt="Pioud Energy"
+            width={206}
+            height={48}
+            className="h-10 w-auto sm:h-11"
+            priority
+          />
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex">
