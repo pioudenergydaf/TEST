@@ -13,8 +13,8 @@ export default function MentionsLegalesPage() {
         <h1 className="text-3xl font-bold text-[#0F2B46]">Mentions légales</h1>
         <div className="space-y-3 text-slate-600">
           <p>
-            <strong>Éditeur :</strong> Pioud Energy SAS - 18 Rue de l&apos;Énergie,
-            75008 Paris.
+            <strong>Éditeur :</strong> Pioud Energy SAS - 8 Rue Henri Dunant, 94370
+            Sucy-en-Brie.
           </p>
           <p>
             <strong>Contact :</strong> {siteConfig.email} - {siteConfig.phone}

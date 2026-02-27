@@ -46,9 +46,9 @@ const localBusinessSchema = {
   email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "18 Rue de l'Énergie",
-    postalCode: "75008",
-    addressLocality: "Paris",
+    streetAddress: "8 Rue Henri Dunant",
+    postalCode: "94370",
+    addressLocality: "Sucy-en-Brie",
     addressCountry: "FR",
   },
   url: siteConfig.url,

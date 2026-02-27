@@ -6,7 +6,7 @@ export const siteConfig = {
   simulatorUrl: "https://simulateur.pioud-energy.fr",
   email: "contact@pioud-energy.fr",
   phone: "01 89 70 45 20",
-  address: "18 Rue de l'Énergie, 75008 Paris",
+  address: "8 Rue Henri Dunant, 94370 Sucy-en-Brie",
 };
 
 export const navLinks = [
