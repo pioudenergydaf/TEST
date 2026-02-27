@@ -1,21 +1,12 @@
 export const siteConfig = {
-  name: "PIOUD ENERGY",
+  name: "Pioud Energy",
   description:
-    "PIOUD ENERGY accompagne particuliers, professionnels, collectivités et grands comptes dans la valorisation des Certificats d'Économies d'Énergie.",
+    "Pioud Energy accompagne particuliers, professionnels, collectivités et grands comptes dans la valorisation des Certificats d'Économies d'Énergie.",
   url: "https://pioud-energy.fr",
   simulatorUrl: "https://simulateur.pioud-energy.fr",
   email: "contact@pioud-energy.fr",
   phone: "01 89 70 45 20",
-  phoneHref: "0189704520",
-  streetAddress: "8 Rue Henri Dunant",
-  postalCode: "94370",
-  city: "Sucy-en-Brie",
-  address: "8 Rue Henri Dunant, 94370 Sucy-en-Brie",
-  siren: "927 628 446",
-  siret: "927 628 446 00019",
-  legalForm: "SAS, société par actions simplifiée",
-  apeCode: "43.22A",
-  president: "Filip Chrétien",
+  address: "18 Rue de l'Énergie, 75008 Paris",
 };
 
 export const navLinks = [
@@ -63,7 +54,7 @@ export const keyFigures = [
 export const testimonials = [
   {
     quote:
-      "Grâce à PIOUD ENERGY, nous avons financé une rénovation complète de l'isolation en moins de 8 semaines. Accompagnement irréprochable.",
+      "Grâce à Pioud Energy, nous avons financé une rénovation complète de l'isolation en moins de 8 semaines. Accompagnement irréprochable.",
     author: "Julie R.",
     role: "Propriétaire - Maison individuelle",
   },
@@ -93,5 +84,8 @@ export const partners = [
 ];
 
 export const servicePhones = [
-  { service: "Standard PIOUD ENERGY", number: "01 89 70 45 20" },
+  { service: "Service particuliers", number: "01 89 70 45 21" },
+  { service: "Service professionnels", number: "01 89 70 45 22" },
+  { service: "Service collectivités", number: "01 89 70 45 23" },
+  { service: "Service grands comptes", number: "01 89 70 45 24" },
 ];

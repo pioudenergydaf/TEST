@@ -14,8 +14,8 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "PIOUD ENERGY | Certificats d'Économies d'Énergie",
-    template: "%s | PIOUD ENERGY",
+    default: "Pioud Energy | Certificats d'Économies d'Énergie",
+    template: "%s | Pioud Energy",
   },
   description:
     "Cabinet expert en Certificats d'Économies d'Énergie : conseils, montage et valorisation CEE pour particuliers, professionnels et collectivités.",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     "Certificats d'Économies d'Énergie",
     "prime énergie",
     "rénovation énergétique",
-    "PIOUD ENERGY",
+    "Pioud Energy",
   ],
   openGraph: {
-    title: "PIOUD ENERGY - Votre partenaire expert CEE",
+    title: "Pioud Energy - Votre partenaire expert CEE",
     description:
       "Accélérez vos projets d'efficacité énergétique grâce à un accompagnement CEE premium et personnalisé.",
     url: siteConfig.url,
-    siteName: "PIOUD ENERGY",
+    siteName: "Pioud Energy",
     locale: "fr_FR",
     type: "website",
   },
@@ -46,16 +46,12 @@ const localBusinessSchema = {
   email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
-    streetAddress: siteConfig.streetAddress,
-    postalCode: siteConfig.postalCode,
-    addressLocality: siteConfig.city,
+    streetAddress: "18 Rue de l'Énergie",
+    postalCode: "75008",
+    addressLocality: "Paris",
     addressCountry: "FR",
   },
   url: siteConfig.url,
-  identifier: [
-    { "@type": "PropertyValue", propertyID: "SIREN", value: siteConfig.siren },
-    { "@type": "PropertyValue", propertyID: "SIRET", value: siteConfig.siret },
-  ],
 };
 
 export default function RootLayout({

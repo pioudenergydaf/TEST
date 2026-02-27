@@ -17,7 +17,7 @@ export default function ProfessionnelsPage() {
       <PageHero
         eyebrow="Professionnels"
         title="Réduisez vos coûts énergétiques et financez vos investissements"
-        description="PIOUD ENERGY accompagne les entreprises dans l'identification d'opérations éligibles, la valorisation CEE et le pilotage administratif de bout en bout."
+        description="Pioud Energy accompagne les entreprises dans l'identification d'opérations éligibles, la valorisation CEE et le pilotage administratif de bout en bout."
         imageUrl="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
         primaryCta={{ href: "/contact", label: "Parler à un expert CEE" }}
         secondaryCta={{ href: "/simulateur", label: "Estimer un projet" }}
@@ -116,7 +116,7 @@ export default function ProfessionnelsPage() {
               adaptée à votre activité.
             </p>
             <Link href="/contact" className="mt-6 inline-flex rounded-full bg-white px-7 py-3 font-semibold text-[#0F2B46]">
-              Contacter PIOUD ENERGY
+              Contacter Pioud Energy
             </Link>
           </div>
         </Reveal>

@@ -17,7 +17,7 @@ export default function CollectivitesPage() {
       <PageHero
         eyebrow="Collectivités"
         title="Financez vos projets publics de transition énergétique"
-        description="PIOUD ENERGY accompagne les collectivités dans la structuration, la conformité et la valorisation des opérations CEE à fort impact territorial."
+        description="Pioud Energy accompagne les collectivités dans la structuration, la conformité et la valorisation des opérations CEE à fort impact territorial."
         imageUrl="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80"
         primaryCta={{ href: "/contact", label: "Être rappelé par un expert public" }}
         secondaryCta={{ href: "/simulateur", label: "Découvrir le simulateur" }}

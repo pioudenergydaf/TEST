@@ -12,7 +12,7 @@ import { keyFigures, partners, sectors, testimonials } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Accueil",
   description:
-    "PIOUD ENERGY simplifie vos démarches CEE et maximise vos primes pour tous vos projets d'efficacité énergétique.",
+    "Pioud Energy simplifie vos démarches CEE et maximise vos primes pour tous vos projets d'efficacité énergétique.",
 };
 
 const sectorIcons = [User, Building2, Landmark, Factory];
@@ -35,7 +35,7 @@ export default function Home() {
               Mandataire CEE - Accompagnement premium
             </p>
             <h1 className="text-4xl font-bold leading-tight sm:text-6xl">
-              Maximisez vos économies d&apos;énergie avec PIOUD ENERGY
+              Maximisez vos économies d&apos;énergie avec Pioud Energy
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/90 sm:text-xl">
               De l&apos;audit initial au versement de la prime, nous pilotons vos
@@ -59,7 +59,7 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               title="Qui sommes-nous ?"
-              description="PIOUD ENERGY est un acteur expert des Certificats d'Économies d'Énergie. Notre mission : rendre les dispositifs CEE lisibles, performants et sécurisés pour chaque client."
+              description="Pioud Energy est un acteur expert des Certificats d'Économies d'Énergie. Notre mission : rendre les dispositifs CEE lisibles, performants et sécurisés pour chaque client."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -191,7 +191,7 @@ export default function Home() {
                 </h2>
                 <p className="mt-3 text-white/90">
                   Réalisez une première estimation en ligne en quelques clics et
-                  échangez ensuite avec un expert PIOUD ENERGY.
+                  échangez ensuite avec un expert Pioud Energy.
                 </p>
               </div>
               <Link

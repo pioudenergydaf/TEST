@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { navLinks, siteConfig } from "@/lib/site-data";
 
 const footerLinks = navLinks.filter((link) => link.href !== "/");
@@ -9,16 +8,9 @@ export function Footer() {
     <footer className="mt-24 bg-[#0B1C2D] text-slate-200">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div className="space-y-4">
-          <Image
-            src="/logo-pioud-energy.svg"
-            alt="PIOUD ENERGY"
-            width={190}
-            height={44}
-            className="h-10 w-auto brightness-0 invert"
-          />
           <p className="text-lg font-semibold text-white">À propos</p>
           <p className="text-sm leading-relaxed text-slate-300">
-            PIOUD ENERGY accompagne ses clients dans le financement de leurs
+            Pioud Energy accompagne ses clients dans le financement de leurs
             projets d&apos;efficacité énergétique via les dispositifs CEE.
           </p>
         </div>
@@ -86,7 +78,7 @@ export function Footer() {
       <div className="border-t border-slate-700/60">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <p>
-            © {new Date().getFullYear()} PIOUD ENERGY. Tous droits réservés.
+            © {new Date().getFullYear()} Pioud Energy. Tous droits réservés.
           </p>
           <p>Mandataire CEE - Solutions d&apos;efficacité énergétique.</p>
         </div>
