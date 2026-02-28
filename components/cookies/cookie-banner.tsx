@@ -1,23 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-type CookieConsent = {
-  essential: true;
-  analytics: boolean;
-  marketing: boolean;
-  updatedAt: string;
-};
-
-const STORAGE_KEY = "pioud-cookie-consent";
-const OPEN_EVENT = "pioud:open-cookie-settings";
+import {
+  COOKIE_CONSENT_OPEN_EVENT,
+  COOKIE_CONSENT_STORAGE_KEY,
+  COOKIE_CONSENT_UPDATED_EVENT,
+  type CookieConsent,
+} from "@/lib/cookie-consent";
 
 function saveConsent(consent: CookieConsent) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+  window.localStorage.setItem(COOKIE_CONSENT_STORAGE_KEY, JSON.stringify(consent));
 }
 
 function readConsent(): CookieConsent | null {
-  const raw = window.localStorage.getItem(STORAGE_KEY);
+  const raw = window.localStorage.getItem(COOKIE_CONSENT_STORAGE_KEY);
   if (!raw) return null;
 
   try {
@@ -50,8 +46,8 @@ export function CookieBanner() {
       setIsCustomizing(true);
     };
 
-    window.addEventListener(OPEN_EVENT, openHandler);
-    return () => window.removeEventListener(OPEN_EVENT, openHandler);
+    window.addEventListener(COOKIE_CONSENT_OPEN_EVENT, openHandler);
+    return () => window.removeEventListener(COOKIE_CONSENT_OPEN_EVENT, openHandler);
   }, []);
 
   const applyConsent = (nextAnalytics: boolean, nextMarketing: boolean) => {
@@ -62,6 +58,7 @@ export function CookieBanner() {
       updatedAt: new Date().toISOString(),
     };
     saveConsent(consent);
+    window.dispatchEvent(new Event(COOKIE_CONSENT_UPDATED_EVENT));
     setIsVisible(false);
     setIsCustomizing(false);
   };
@@ -168,5 +165,3 @@ export function CookieBanner() {
     </aside>
   );
 }
-
-export const cookieBannerOpenEvent = OPEN_EVENT;

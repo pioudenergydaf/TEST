@@ -1,10 +1,10 @@
 "use client";
 
-import { cookieBannerOpenEvent } from "@/components/cookies/cookie-banner";
+import { COOKIE_CONSENT_OPEN_EVENT } from "@/lib/cookie-consent";
 
 export function ManageCookiesButton() {
   const openBanner = () => {
-    window.dispatchEvent(new Event(cookieBannerOpenEvent));
+    window.dispatchEvent(new Event(COOKIE_CONSENT_OPEN_EVENT));
   };
 
   return (
