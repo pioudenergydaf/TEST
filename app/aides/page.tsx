@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Award,
@@ -50,6 +51,27 @@ const usefulLinks = [
   { label: "ANIL (aides locales)", href: "https://www.anil.org/aides-locales-travaux/" },
 ];
 
+const aidesVisuals = [
+  {
+    title: "Fiches CEE et montage administratif",
+    imageUrl:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    alt: "Documents administratifs pour dossier d'aides énergétiques",
+  },
+  {
+    title: "Analyse financière des aides",
+    imageUrl:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    alt: "Analyse budgétaire des subventions de rénovation énergétique",
+  },
+  {
+    title: "Travaux de rénovation éligibles",
+    imageUrl:
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    alt: "Chantier de rénovation énergétique d'un logement",
+  },
+];
+
 export default function AidesPage() {
   return (
     <div>
@@ -57,7 +79,7 @@ export default function AidesPage() {
         eyebrow="Aides & Subventions"
         title="Aides & Subventions 2026 : le guide complet"
         description="Découvrez toutes les aides disponibles pour financer vos travaux de rénovation énergétique. CEE, MaPrimeRénov', Éco-PTZ, TVA réduite... PIOUD ENERGY vous aide à les cumuler pour réduire votre reste à charge au maximum."
-        imageUrl="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1700&q=80"
+        imageUrl="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1700&q=80"
         primaryCta={{ href: "/simulateur", label: "Simuler mes aides" }}
         secondaryCta={{ href: "/contact", label: "Être accompagné" }}
       />
@@ -69,6 +91,25 @@ export default function AidesPage() {
             {"Chaque dispositif répond à une logique spécifique. Nous vous aidons à les combiner intelligemment pour optimiser votre plan de financement."}
           </p>
         </Reveal>
+
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {aidesVisuals.map((visual, index) => (
+            <Reveal key={visual.title} delay={index * 0.06}>
+              <article className="card-surface overflow-hidden p-0">
+                <div className="relative h-44">
+                  <Image
+                    src={visual.imageUrl}
+                    alt={visual.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
+                <p className="px-4 py-3 text-sm font-semibold text-[#0F2B46]">{visual.title}</p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
 
         <div className="mt-10 space-y-7">
           <Reveal>
