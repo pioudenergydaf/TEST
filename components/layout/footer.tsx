@@ -22,7 +22,7 @@ export function Footer() {
             {footerLinks.map((link) => (
               <li key={link.href}>
                 <Link className="text-slate-300 transition hover:text-white" href={link.href}>
-                  {link.label}
+                  {link.href === "/aides" ? "Aides & Subventions" : link.label}
                 </Link>
               </li>
             ))}

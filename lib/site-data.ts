@@ -16,6 +16,7 @@ export const navLinks = [
   { href: "/collectivites", label: "Collectivités" },
   { href: "/grands-comptes", label: "Grands comptes" },
   { href: "/contact", label: "Contact" },
+  { href: "/aides", label: "Aides" },
 ];
 
 export const sectors = [
