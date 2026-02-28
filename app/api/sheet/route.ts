@@ -31,9 +31,16 @@ export async function GET(request: Request) {
     if (probe.ok) {
       return NextResponse.redirect(target);
     }
-  } catch {
-    // Fallback handled below.
-  }
 
-  return NextResponse.redirect(CATALOG_URL);
+    // Fallback catalogue uniquement sur indisponibilité explicite du document.
+    if (probe.status === 404 || probe.status === 410) {
+      return NextResponse.redirect(CATALOG_URL);
+    }
+
+    // Pour les autres statuts (403/405/5xx), on laisse le navigateur tenter l'URL PDF.
+    return NextResponse.redirect(target);
+  } catch {
+    // En cas d'erreur réseau côté serveur, on laisse le navigateur tenter l'URL PDF.
+    return NextResponse.redirect(target);
+  }
 }
