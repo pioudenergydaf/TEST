@@ -29,6 +29,7 @@ const industryOperations = [
     icon: Cog,
     description:
       "Remplacement de moteurs asynchrones par des moteurs à haut rendement IE3/IE4.",
+    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/IND-UT-102%20v%20A19-2.pdf",
   },
   {
     title: "Variateurs de vitesse",
@@ -36,6 +37,8 @@ const industryOperations = [
     icon: Settings2,
     description:
       "Variation électronique de vitesse sur moteurs asynchrones. Économies de 20 à 50% sur les applications de pompage et ventilation.",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=IND-UT-102%20BAT-TH-112",
   },
   {
     title: "Récupération de chaleur fatale",
@@ -43,6 +46,7 @@ const industryOperations = [
     icon: Thermometer,
     description:
       "Récupération et valorisation de la chaleur perdue sur les process industriels (fumées, eaux de refroidissement, air comprimé).",
+    pdfUrl: "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=IND-UT-117",
   },
   {
     title: "Air comprimé",
@@ -50,6 +54,8 @@ const industryOperations = [
     icon: Wind,
     description:
       "Optimisation des réseaux d'air comprimé : mise en veille automatique des machines, récupération de chaleur sur compresseurs.",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=IND-UT-102%20IND-UT-140",
   },
   {
     title: "Éclairage LED industriel",
@@ -57,7 +63,7 @@ const industryOperations = [
     icon: Lightbulb,
     description:
       "Éclairage LED pour entrepôts, ateliers, zones logistiques. Jusqu'à 70% d'économies sur le poste éclairage.",
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAT-EQ-111.pdf",
+    pdfUrl: "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=BAT-EQ-111",
   },
   {
     title: "Isolation industrielle (calorifugeage)",
@@ -65,6 +71,8 @@ const industryOperations = [
     icon: Package,
     description:
       "Calorifugeage des réseaux de chaleur, vapeur et fluides thermiques. Réduction des pertes en ligne.",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/IND-UT-131%20vA37-2%20%C3%A0%20compter%20du%2001-04-2021.pdf",
   },
   {
     title: "Chaudière biomasse industrielle",
@@ -72,6 +80,7 @@ const industryOperations = [
     icon: Flame,
     description:
       "Remplacement de chaudières fossiles par des chaudières biomasse pour la production de chaleur industrielle.",
+    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/IND-UT-104.pdf",
   },
   {
     title: "Stockage de chaleur fatale",
@@ -80,6 +89,8 @@ const industryOperations = [
     description:
       "Système de stockage de chaleur fatale pour une valorisation différée.",
     badge: "Nouveau",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/IND-UT-139%20vA73-2%20%C3%A0%20compter%20du%2001-11-2025.pdf",
   },
 ];
 
@@ -138,7 +149,7 @@ export default function IndustriePage() {
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">
                   {operation.description}
                 </p>
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}

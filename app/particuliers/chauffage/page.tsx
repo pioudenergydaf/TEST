@@ -48,7 +48,7 @@ const operations = [
     ref: "BAR-TH-113",
     icon: Flame,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-113%20vA79-6%20%C3%A0%20compter%20du%2001-01-2026.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-113%20vA79-4%20%C3%A0%20compter%20du%2001-01-2026.pdf",
     description:
       "Chaudière bois ou granulés. Bonification Coup de pouce x5 en remplacement d'une chaudière fossile. Attention : exclue de MaPrimeRénov' en geste seul depuis 2026, mais toujours éligible aux CEE et Coup de pouce.",
     badges: [
@@ -81,7 +81,8 @@ const operations = [
     title: "Chauffe-eau solaire individuel",
     ref: "BAR-TH-101",
     icon: Sun,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-101.pdf",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-101%20vA78.3%20%C3%A0%20compter%20du%2001-01-2026.pdf",
     description:
       "Production d'eau chaude sanitaire par énergie solaire. Idéal en zones ensoleillées (H2, H3).",
   },
@@ -89,7 +90,8 @@ const operations = [
     title: "Chauffe-eau thermodynamique",
     ref: "BAR-TH-148",
     icon: Zap,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-148.pdf",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-148%20vA78.4%20%C3%A0%20compter%20du%2001-01-2026.pdf",
     description:
       "Chauffe-eau thermodynamique à accumulation. Divise par 2 à 3 la consommation liée à l'eau chaude.",
   },
@@ -155,7 +157,7 @@ export default function ParticuliersChauffagePage() {
                     ))}
                   </div>
                 ) : null}
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}

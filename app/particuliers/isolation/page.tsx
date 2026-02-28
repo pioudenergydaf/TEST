@@ -19,7 +19,7 @@ const operations = [
     ref: "BAR-EN-101",
     icon: Home,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-101%20vA64-4%20%C3%A0%20compter%20du%2001-01-2025.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-101%20vA64-6%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
     description:
       "Isolation des combles perdus, aménagés ou de la toiture. C'est l'opération la plus réalisée en France (16,7% des CEE délivrés). Réduction immédiate des déperditions par le toit, qui représentent jusqu'à 30% des pertes de chaleur.",
     requirement: "Résistance thermique R ≥ 7 m².K/W en combles perdus, R ≥ 6 m².K/W en rampants",
@@ -31,7 +31,7 @@ const operations = [
     ref: "BAR-EN-102",
     icon: Layers,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-102%20vA64-3%20%C3%A0%20compter%20du%2001-01-2025.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-102%20vA65-4%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
     description:
       "Isolation thermique des murs par l'intérieur (ITI) ou par l'extérieur (ITE). Représente 14,8% des CEE délivrés. Attention : exclue de MaPrimeRénov' en geste seul depuis 2026, mais toujours éligible aux CEE.",
     requirement: "Résistance thermique R ≥ 3,7 m².K/W",
@@ -43,7 +43,7 @@ const operations = [
     ref: "BAR-EN-103",
     icon: LayoutGrid,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-103%20vA64-4%20%C3%A0%20compter%20du%2001-01-2025.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-103%20vA64-6%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
     description:
       "Isolation des planchers bas donnant sur un sous-sol, un vide sanitaire ou un passage ouvert. Représente 6% des CEE délivrés.",
     requirement: "Résistance thermique R ≥ 3 m².K/W",
@@ -53,7 +53,7 @@ const operations = [
     ref: "BAR-EN-105",
     icon: Building,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-105%20vA64-3%20%C3%A0%20compter%20du%2001-01-2025.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-105%20vA64-4%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
     description:
       "Isolation thermique des toitures-terrasses dans les bâtiments résidentiels existants.",
     requirement: "Résistance thermique R ≥ 4,5 m².K/W",
@@ -63,7 +63,7 @@ const operations = [
     ref: "BAR-TH-160",
     icon: Pipette,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-160%20vA39-2%20%C3%A0%20compter%20du%2001-04-2022.pdf",
+      "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=BAR-TH-160",
     description:
       "Calorifugeage des réseaux de chauffage et d'eau chaude sanitaire hors du volume chauffé. 5,4% des CEE délivrés. Souvent oublié, pourtant très rentable.",
     badge: "💡 Souvent oublié",
@@ -123,7 +123,7 @@ export default function ParticuliersIsolationPage() {
                     Exigence technique : {operation.requirement}
                   </p>
                 ) : null}
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}

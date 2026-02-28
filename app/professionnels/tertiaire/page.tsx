@@ -39,7 +39,7 @@ const tertiaryOperations = [
     description:
       "Remplacement des luminaires existants par des modules LED performants. L'éclairage représente jusqu'à 30% de la consommation d'un bâtiment tertiaire.",
     examples: "Exemples : bureaux, parkings, commerces, entrepôts",
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAT-EQ-111.pdf",
+    pdfUrl: "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=BAT-EQ-111",
   },
   {
     title: "Isolation toitures et combles",
@@ -58,7 +58,8 @@ const tertiaryOperations = [
     description:
       "Isolation des toitures-terrasses, très courante sur les bâtiments tertiaires à toit plat (bureaux, centres commerciaux, hôpitaux).",
     examples: "Exemples : plateaux de bureaux, retail parks",
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAT-EN-107.pdf",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-EN-107%20vA64-3%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
   },
   {
     title: "Isolation des murs",
@@ -132,7 +133,7 @@ const tertiaryOperations = [
     examples: "Exemples : immeubles tertiaires, hôpitaux, campus",
     badge: "Décret BACS",
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-TH-116%20vA62-2%20%C3%A0%20compter%20du%2001-01-2025.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-TH-116%20vA62-6%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
   },
   {
     title: "PAC réversible air/air",
@@ -151,7 +152,7 @@ const tertiaryOperations = [
     description:
       "Mise en place de portes ou couvercles sur les meubles frigorifiques en température positive. Très répandu en grande distribution et commerce alimentaire.",
     examples: "Exemples : supermarchés, magasins spécialisés",
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAT-EQ-124.pdf",
+    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-EQ-124.pdf",
   },
   {
     title: "Destratification d'air",
@@ -160,7 +161,8 @@ const tertiaryOperations = [
     description:
       "Système de destratification dans les locaux de grande hauteur (entrepôts, halls, gymnases). Meilleure répartition de la chaleur et économies de chauffage.",
     examples: "Exemples : entrepôts logistiques, halls sportifs",
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAT-TH-142.pdf",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-TH-142%20vA71-4%20%C3%A0%20compter%20du%2001-08-2025%20-%20Syst%C3%A8me%20de%20d%C3%A9stratification%20d%E2%80%99air_1.pdf",
   },
 ];
 
@@ -219,7 +221,7 @@ export default function TertiairePage() {
                   {operation.description}
                 </p>
                 <p className="mt-3 text-sm font-medium text-slate-700">{operation.examples}</p>
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}

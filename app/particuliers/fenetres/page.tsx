@@ -18,7 +18,7 @@ const operations = [
     ref: "BAR-EN-104",
     icon: Square,
     pdfUrl:
-      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-104%20vA54-3%20%C3%A0%20compter%20du%2001-01-2024.pdf",
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-104%20vA54-2%20%C3%A0%20compter%20du%2001-01-2024_0.pdf",
     description:
       "Remplacement de fenêtres ou portes-fenêtres complètes avec vitrage isolant. Améliore le confort thermique et acoustique, réduit les déperditions par les parois vitrées (jusqu'à 15% des pertes de chaleur).",
     requirement: "Uw ≤ 1,3 W/m².K et Sw ≥ 0,3 (ou Uw ≤ 1,7 et Sw ≥ 0,36)",
@@ -27,6 +27,8 @@ const operations = [
     title: "Fermeture isolante (volets)",
     ref: "BAR-EN-106",
     icon: PanelLeftClose,
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-EN-106%20vA64-5%20%C3%A0%20compter%20du%2001-01-2025_0.pdf",
     description:
       "Volets isolants pour réduire les déperditions thermiques nocturnes et les apports solaires estivaux.",
   },
@@ -75,7 +77,7 @@ export default function ParticuliersFenetresPage() {
                     Exigence technique : {operation.requirement}
                   </p>
                 ) : null}
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}

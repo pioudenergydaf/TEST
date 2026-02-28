@@ -17,7 +17,7 @@ const operations = [
     title: "Régulation par sonde de température extérieure",
     ref: "BAR-TH-111",
     icon: Thermometer,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-111.pdf",
+    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-111.pdf",
     description:
       "Installation d'une régulation avec sonde extérieure sur un système de chauffage central existant.",
   },
@@ -25,7 +25,8 @@ const operations = [
     title: "Régulation par programmation horaire pièce par pièce",
     ref: "BAR-TH-173",
     icon: Gauge,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-173.pdf",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-173%20v69-2%20%C3%A0%20compter%20du%2001-07-2025.pdf",
     description:
       "Système de programmation et régulation du chauffage pièce par pièce. Permet des économies de 15 à 25% sur le poste chauffage.",
     badge: "Valable jusqu'au 31/12/2026",
@@ -35,7 +36,7 @@ const operations = [
     title: "Radiateur basse température",
     ref: "BAR-TH-110",
     icon: Heater,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-110.pdf",
+    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-110.pdf",
     description:
       "Radiateurs basse température pour un chauffage central, optimisés pour fonctionner avec une PAC ou une chaudière à condensation.",
   },
@@ -88,7 +89,7 @@ export default function ParticuliersRegulationPage() {
                   Fiche : {operation.ref}
                 </p>
                 <p className="mt-3 text-sm text-slate-600">{operation.description}</p>
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}

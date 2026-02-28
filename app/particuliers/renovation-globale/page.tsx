@@ -17,7 +17,7 @@ const operations = [
     title: "Rénovation globale d'une maison individuelle",
     ref: "BAR-TH-164",
     icon: Home,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-164.pdf",
+    pdfUrl: "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=BAR-TH-164",
     description:
       "C'est l'opération N°1 en France avec 18,2% des CEE délivrés. Combinaison de plusieurs travaux permettant un gain énergétique global significatif.",
     badge: "⭐ N°1 des CEE en France",
@@ -27,7 +27,8 @@ const operations = [
     title: "Rénovation d'ampleur d'une maison individuelle",
     ref: "BAR-TH-174",
     icon: Wrench,
-    pdfUrl: "https://www.ecologie.gouv.fr/sites/default/files/documents/Fiche%20BAR-TH-174.pdf",
+    pdfUrl:
+      "https://www.ecologie.gouv.fr/sites/default/files/documents/BAR-TH-174%20vA80-3%20%C3%A0%20compter%20du%2017-01-2026.pdf",
     description:
       "Rénovation d'ampleur avec gain d'au moins 2 classes DPE. Cumulable avec MaPrimeRénov' Rénovation d'ampleur pour les logements E, F ou G.",
     badge: "Nouveau",
@@ -101,7 +102,7 @@ export default function ParticuliersRenovationGlobalePage() {
                   Fiche : {operation.ref}
                 </p>
                 <p className="mt-3 text-sm text-slate-600">{operation.description}</p>
-                <OfficialSheetLinks pdfUrl={operation.pdfUrl} />
+                <OfficialSheetLinks sheetUrl={operation.pdfUrl} />
               </article>
             </Reveal>
           ))}
