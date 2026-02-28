@@ -8,12 +8,16 @@ type OfficialSheetLinksProps = {
 };
 
 export function OfficialSheetLinks({ pdfUrl }: OfficialSheetLinksProps) {
+  const safePdfRedirectUrl = pdfUrl
+    ? `/api/sheet?url=${encodeURIComponent(pdfUrl)}`
+    : null;
+
   return (
     <div className="mt-4 space-y-1.5">
-      {pdfUrl ? (
+      {safePdfRedirectUrl ? (
         <>
           <a
-            href={pdfUrl}
+            href={safePdfRedirectUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-[#1d4ed8] underline underline-offset-2"
