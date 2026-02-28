@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  BriefcaseBusiness,
+  ArrowRight,
+  Building2,
   Factory,
-  LineChart,
-  Settings2,
+  FileCheck2,
+  Gauge,
+  Handshake,
   ShieldCheck,
-  Warehouse,
-  Zap,
 } from "lucide-react";
 import { PageHero } from "@/components/ui/page-hero";
 import { Reveal } from "@/components/ui/reveal";
@@ -16,7 +16,7 @@ import { Reveal } from "@/components/ui/reveal";
 export const metadata: Metadata = {
   title: "CEE pour les professionnels",
   description:
-    "Optimisez vos investissements énergétiques avec les Certificats d'Économies d'Énergie dédiés aux entreprises grâce à PIOUD ENERGY.",
+    "CEE Professionnels : financez vos travaux d'efficacité énergétique avec PIOUD ENERGY pour le tertiaire et l'industrie.",
 };
 
 export default function ProfessionnelsPage() {
@@ -24,144 +24,110 @@ export default function ProfessionnelsPage() {
     <div>
       <PageHero
         eyebrow="Professionnels"
-        title="Réduisez vos coûts énergétiques et financez vos investissements"
-        description="PIOUD ENERGY accompagne les entreprises dans l'identification d'opérations éligibles, la valorisation CEE et le pilotage administratif de bout en bout."
+        title="CEE Professionnels : financez vos travaux d'efficacité énergétique"
+        description="PIOUD ENERGY accompagne les entreprises du tertiaire et de l'industrie dans l'identification des opérations éligibles, la valorisation CEE et le pilotage administratif de bout en bout."
         imageUrl="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
         primaryCta={{ href: "/contact", label: "Parler à un expert CEE" }}
         secondaryCta={{ href: "/simulateur", label: "Estimer un projet" }}
       />
 
       <section className="section-shell py-20">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <Reveal>
-            <div>
-              <h2 className="text-4xl font-bold text-[#0F2B46]">
-                Pourquoi intégrer les CEE dans votre stratégie ?
-              </h2>
-              <p className="mt-4 text-lg text-slate-600">
-                Le dispositif CEE diminue vos CAPEX énergétiques, améliore votre
-                compétitivité et soutient vos engagements ESG avec des résultats
-                rapidement mesurables.
-              </p>
-              <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                {[
-                  { value: "1,2 M€", label: "mobilisés en moyenne sur les programmes multi-sites" },
-                  { value: "35%", label: "d'économies observées sur certains postes CVC/LED" },
-                  { value: "8 mois", label: "délai moyen de déploiement d'un programme" },
-                ].map((item) => (
-                  <div key={item.label} className="card-surface p-4">
-                    <p className="text-2xl font-bold text-[#0F2B46]">{item.value}</p>
-                    <p className="mt-1 text-sm text-slate-600">{item.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="relative min-h-[350px] overflow-hidden rounded-3xl border border-slate-200 shadow-xl shadow-[#0f2b46]/10">
-              <Image
-                src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=80"
-                alt="Réunion en entreprise autour d'un projet énergétique"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
-        </div>
-      </section>
+        <Reveal>
+          <h2 className="text-center text-4xl font-bold text-[#0F2B46]">
+            Choisissez votre univers métier
+          </h2>
+        </Reveal>
 
-      <section className="section-shell pb-20">
-        <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <Reveal>
-            <div className="relative min-h-[350px] overflow-hidden rounded-3xl border border-slate-200 shadow-xl shadow-[#0f2b46]/10">
+            <Link
+              href="/professionnels/tertiaire"
+              className="group relative block min-h-[420px] overflow-hidden rounded-3xl border border-slate-200 shadow-2xl shadow-[#0f2b46]/10"
+            >
               <Image
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1400&q=80"
-                alt="Site industriel"
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1500&q=80"
+                alt="Bâtiment de bureaux tertiaire"
                 fill
-                className="object-cover"
+                className="object-cover transition duration-500 group-hover:scale-105"
               />
-            </div>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div>
-              <h2 className="text-4xl font-bold text-[#0F2B46]">Secteurs couverts</h2>
-              <p className="mt-4 text-lg text-slate-600">
-                Nous adaptons notre méthode à vos contraintes opérationnelles et
-                techniques, avec un pilotage orienté performance.
-              </p>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                {[
-                  {
-                    title: "Industrie",
-                    description:
-                      "Optimisation procédés, utilités et récupération de chaleur fatale.",
-                    icon: Factory,
-                  },
-                  {
-                    title: "Tertiaire",
-                    description:
-                      "Eclairage, CVC, GTB, enveloppe du bâtiment et monitoring.",
-                    icon: BriefcaseBusiness,
-                  },
-                  {
-                    title: "Logistique",
-                    description:
-                      "Performance énergétique des entrepôts et plateformes multi-sites.",
-                    icon: Warehouse,
-                  },
-                  {
-                    title: "Commerce",
-                    description:
-                      "Optimisation éclairage et froid commercial avec plan d'actions progressif.",
-                    icon: Zap,
-                  },
-                ].map((item) => (
-                  <article key={item.title} className="card-surface p-5">
-                    <span className="inline-flex rounded-xl bg-emerald-50 p-3 text-emerald-600">
-                      <item.icon className="h-5 w-5" />
-                    </span>
-                    <h3 className="mt-3 text-xl font-semibold text-[#0F2B46]">{item.title}</h3>
-                    <p className="mt-2 text-slate-600">{item.description}</p>
-                  </article>
-                ))}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#071a2d]/90 via-[#0f2b46]/60 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-7 text-white">
+                <span className="inline-flex rounded-xl bg-white/15 p-3 text-emerald-300">
+                  <Building2 className="h-6 w-6" />
+                </span>
+                <h3 className="mt-4 text-3xl font-bold">CEE Tertiaire</h3>
+                <p className="mt-2 text-white/90">
+                  Bureaux, commerces, hôtels, santé, enseignement... Optimisez la
+                  performance énergétique de vos bâtiments tertiaires grâce aux CEE.
+                </p>
+                <p className="mt-3 text-sm font-semibold text-emerald-300">
+                  LED, isolation, PAC, GTB, CVC
+                </p>
+                <span className="mt-5 inline-flex items-center text-sm font-semibold text-white">
+                  Découvrir les solutions tertiaire
+                  <ArrowRight className="ml-1 h-4 w-4 transition group-hover:translate-x-0.5" />
+                </span>
               </div>
-            </div>
+            </Link>
+          </Reveal>
+
+          <Reveal delay={0.08}>
+            <Link
+              href="/professionnels/industrie"
+              className="group relative block min-h-[420px] overflow-hidden rounded-3xl border border-slate-200 shadow-2xl shadow-[#0f2b46]/10"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1500&q=80"
+                alt="Site industriel pour programme CEE"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#071a2d]/90 via-[#0f2b46]/60 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-7 text-white">
+                <span className="inline-flex rounded-xl bg-white/15 p-3 text-emerald-300">
+                  <Factory className="h-6 w-6" />
+                </span>
+                <h3 className="mt-4 text-3xl font-bold">CEE Industrie</h3>
+                <p className="mt-2 text-white/90">
+                  Sites industriels, entrepôts, usines... Réduisez vos CAPEX
+                  énergétiques et valorisez vos investissements via les CEE.
+                </p>
+                <p className="mt-3 text-sm font-semibold text-emerald-300">
+                  Moteurs, variateurs, récupération de chaleur, air comprimé, process
+                </p>
+                <span className="mt-5 inline-flex items-center text-sm font-semibold text-white">
+                  Découvrir les solutions industrie
+                  <ArrowRight className="ml-1 h-4 w-4 transition group-hover:translate-x-0.5" />
+                </span>
+              </div>
+            </Link>
           </Reveal>
         </div>
       </section>
 
       <section className="section-shell pb-20">
         <Reveal>
-          <h2 className="text-4xl font-bold text-[#0F2B46]">Cas concrets</h2>
+          <h2 className="text-center text-4xl font-bold text-[#0F2B46]">Chiffres clés</h2>
         </Reveal>
-        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
           {[
             {
-              title: "Groupe logistique national",
-              detail:
-                "14 entrepôts modernisés (LED + régulation CVC) et 1,2 M€ de primes CEE obtenues.",
-              icon: LineChart,
+              value: "1,2 M€",
+              label: "mobilisés en moyenne sur les programmes multi-sites",
             },
             {
-              title: "Réseau retail 120 points de vente",
-              detail:
-                "Déploiement GTB et relamping, -32% de consommation électrique en 12 mois.",
-              icon: Settings2,
+              value: "35%",
+              label: "d'économies observées sur certains postes CVC/LED",
             },
             {
-              title: "PME industrielle multi-sites",
-              detail:
-                "Récupération de chaleur sur compresseurs et modernisation chaufferie, ROI accéléré.",
-              icon: ShieldCheck,
+              value: "8 mois",
+              label: "délai moyen de déploiement",
             },
-          ].map((item) => (
-            <Reveal key={item.title}>
-              <article className="card-surface h-full p-6">
-                <span className="inline-flex rounded-xl bg-blue-50 p-3 text-[#0F2B46]">
-                  <item.icon className="h-5 w-5" />
-                </span>
-                <h3 className="mt-4 text-xl font-semibold text-[#0F2B46]">{item.title}</h3>
-                <p className="mt-3 text-slate-600">{item.detail}</p>
+          ].map((item, index) => (
+            <Reveal key={item.label} delay={index * 0.08}>
+              <article className="card-surface p-6 text-center">
+                <p className="text-4xl font-bold text-[#0F2B46]">{item.value}</p>
+                <p className="mt-2 text-sm text-slate-600">{item.label}</p>
               </article>
             </Reveal>
           ))}
@@ -172,21 +138,40 @@ export default function ProfessionnelsPage() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal>
             <div>
-              <h2 className="text-4xl font-bold text-[#0F2B46]">
-                Méthodologie d&apos;accompagnement
-              </h2>
+              <h2 className="text-4xl font-bold text-[#0F2B46]">Pourquoi choisir PIOUD ENERGY</h2>
+              <p className="mt-4 text-lg text-slate-600">
+                Nos équipes combinent expertise technique, maîtrise réglementaire
+                et pilotage opérationnel pour sécuriser vos primes CEE.
+              </p>
               <div className="mt-6 space-y-4">
                 {[
-                  "Audit initial et priorisation des gisements d'économies.",
-                  "Sécurisation contractuelle et documentaire des opérations.",
-                  "Suivi chantier et consolidation des preuves CEE.",
-                  "Dépôt, contrôle et valorisation financière avec reporting exécutif.",
-                ].map((step, index) => (
-                  <article key={step} className="card-surface p-5">
-                    <p className="text-sm font-semibold uppercase text-emerald-600">
-                      Étape {index + 1}
-                    </p>
-                    <p className="mt-2 text-slate-700">{step}</p>
+                  {
+                    title: "Ingénierie CEE multi-secteurs",
+                    text: "Identification des opérations les plus rentables pour vos bâtiments et process.",
+                    icon: Gauge,
+                  },
+                  {
+                    title: "Conformité documentaire renforcée",
+                    text: "Montage et vérification des pièces avant signature pour éviter les rejets.",
+                    icon: FileCheck2,
+                  },
+                  {
+                    title: "Pilotage jusqu'au versement",
+                    text: "Suivi de l'avancement et coordination des acteurs terrain jusqu'à paiement.",
+                    icon: ShieldCheck,
+                  },
+                  {
+                    title: "Conseil stratégique de proximité",
+                    text: "Un interlocuteur dédié et des recommandations adaptées à vos objectifs CAPEX/OPEX.",
+                    icon: Handshake,
+                  },
+                ].map((step) => (
+                  <article key={step.title} className="card-surface p-5">
+                    <span className="inline-flex rounded-lg bg-emerald-50 p-2 text-emerald-600">
+                      <step.icon className="h-4 w-4" />
+                    </span>
+                    <p className="mt-3 text-base font-semibold text-[#0F2B46]">{step.title}</p>
+                    <p className="mt-1 text-sm text-slate-700">{step.text}</p>
                   </article>
                 ))}
               </div>
@@ -210,8 +195,8 @@ export default function ProfessionnelsPage() {
           <div className="card-surface bg-gradient-to-r from-[#0F2B46] to-[#0E7B6D] p-8 text-center text-white">
             <h2 className="text-3xl font-bold">Échangeons sur vos objectifs énergétiques</h2>
             <p className="mx-auto mt-3 max-w-2xl text-white/90">
-              Nos équipes vous proposent un cadrage rapide et une feuille de route CEE
-              adaptée à votre activité.
+              Nos équipes vous proposent un cadrage rapide et une feuille de route
+              CEE adaptée à votre activité tertiaire ou industrielle.
             </p>
             <Link href="/contact" className="mt-6 inline-flex rounded-full bg-white px-7 py-3 font-semibold text-[#0F2B46]">
               Contacter PIOUD ENERGY
